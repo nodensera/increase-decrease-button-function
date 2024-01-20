@@ -2,19 +2,23 @@ const plus = document.querySelector('.plus'),
     minus = document.querySelector('.minus'),
     num = document.querySelector('.num');
 
-    let a = 1;
+let a = 1;
+const limit = 3;
 
-    plus.addEventListener('click', ()=>{
+plus.addEventListener('click', () => {
+    if (a < limit) {
         a++;
         a = (a < 10) ? '0' + a : a;
         num.innerText = a;
         console.log(a)
-    });
+    }
+});
 
-    minus.addEventListener('click', ()=> {
-        if (a > 1) {
-            a--;
-            a = (a < 10) ? '0' + a : a;
-            num.innerText = a;
-        }
-    })
+minus.addEventListener('click', () => {
+    if (a > 1) {
+        a--;
+        a = (a < 10) ? '0' + a : a;
+        num.innerText = a;
+    }
+})
+

@@ -13,5 +13,18 @@ body {
 }
 
 .button span {
-    padding: 6px;
+    padding: 6px 15px;
+}
+
+.minus,
+.plus {
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.button span.num {
+    font-weight: 400;
+    letter-spacing: 3px;
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
 }
